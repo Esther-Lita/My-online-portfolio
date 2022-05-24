@@ -5,8 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
-  background: F9F3EE;
+  margin: 100px 0;
 }
 
 h1,
@@ -32,10 +31,6 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
-}
-
-.container {
-  padding-bottom: 50px;
 }
 
 .navigation-links {
@@ -116,7 +111,24 @@ p {
 }
 
 @media (max-width: 580px) {
-  .container {
-    padding: 0 20px;
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .link-projects {
+    text-align: center;
+    display: block;
+    margin: 0 40px;
   }
 }
