@@ -241,9 +241,7 @@ footer .social-media-icons a:hover {
   color: var(--primary-color) !important;
 }
 
-.bg-light {
-  background: white !important;
-}
+
 
 .navbar {
   backdrop-filter: blur(10px);
