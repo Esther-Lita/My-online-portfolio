@@ -15,20 +15,30 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
+    <script
+      src="https://kit.fontawesome.com/c6cb2133d8.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/scc/styles.css" />
-    <title>About me - estherlizardo.com</title>
   </head>
+
   <body>
     <div class="container">
       <nav class="navbar fixed-top navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"> Esthel Lizardo </a>
+          <a class="navbar-brand head-logo" href="index.html"> EL </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -56,77 +66,121 @@
                   class="nav-link active"
                   href="/about.html"
                   title="takes you to the 'about me' page"
-                  >About me</a
+                  >About</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
+                  aria-current="page"
+                  href="/work.html"
+                  title="Goes to Esther's Recent Work Page"
+                  >Work</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
                   href="/contact.html"
                   title="takes you to the 'contact' information"
-                  >Contact me</a
+                  >Contact</a
                 >
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <h1 class="text-center">About me</h1>
-      <h3 class="text-center about-h3">
-        Front-end developer from Puerto Plata, Dominican Republic
-      </h3>
-
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="col-sm-4">
-          <div class="origins-text">
-            <h2 class="text-center">Origins</h2>
-            <p class="about-paragraphs">
-              I was born and raised in Dominican Republic, I lived there the
-              first 17 years of my life. Then my family moved to a little
-              island, in the south of Spain, named Lanzarote.
+        <div class="col-sm-6 mt-5">
+          <div>
+            <h2>Front-end Developer</h2>
+
+            <p>
+              My name is <span class="Esther">Esther Lizardo</span> and I'm a
+              Front-end developer based in Europe. I was born and raised in
+              Dominican Republic, now I live in a little island in the south of
+              Spain, named Lanzarote.
             </p>
+            <div class="experience">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>I'm looking for opportunities</p>
+                </div>
+                <div class="col-sm-6">
+                  <p>
+                    I am strongly driven to help people, when it comes to work,
+                    the skill to capture the costumers wants and needs to meet
+                    the standards required for the job is a very important
+                    quality.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-sm-6">
           <img
             src="img/esther02.jpeg"
-            class="img-fluid rounded shadow p-2 origins-img"
+            class="img-fluid Esther-img"
             alt=" Esther Lizardo"
           />
         </div>
       </div>
-
-      <div class="experience">
-        <h2>New in the field</h2>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="about-experience">
-              <p>
-                Since early age I've been strongly driven to help people, and in
-                a way that helps you so much when it comes to business, it's
-                very important to capture the costumers wants and needs to meet
-                the standards required for the job.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="about-experience">
-              <p>
-                Since early age I've been strongly driven to help people, and in
-                a way that helps you so much when it comes to business, it's
-                very important to capture the costumers wants and needs to meet
-                the standards required for the job.
-              </p>
+    </div>
+    <footer>
+      <div class="contact-footer">
+        <div class="d-none d-sm-flex footer-invitation">
+          <div>
+            <h3>Let's work together!</h3>
+            <div class="d-flex justify-content-center social-media-icons">
+              <a
+                href="https://github.com/litaesther10"
+                target="_blank"
+                title="GitHub Profile"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/esther_lita/"
+                target="_blank"
+                title="Instragram Profile"
+              >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://twitter.com/esther_ligar"
+                target="_blank"
+                title="Twitter Profile"
+              >
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
-        <img
-          src="/img/esther.jpeg"
-          class="img-fluid rounded shadow experience-img p-2"
-          alt="Esther Lizardo"
-        />
+
+        <div id="contact">
+          <h2 class="text-center">📮 Contact me</h2>
+          <a
+            href="mailto:estherlitalg@gmail.com"
+            class="email-link mb-5"
+            title="prepares a message for the email below "
+          >
+            estherlitalg@gmail.com
+          </a>
+        </div>
+        <p class="open-source-p">
+          This Website is
+          <a
+            href="https://github.com/litaesther10/My-online-portfolio"
+            class="open-source-link"
+            >Open Source</a
+          >
+          by Esther Lizardo
+        </p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

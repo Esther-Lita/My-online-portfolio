@@ -1,17 +1,24 @@
 :root {
   --primary-color: #487eb0;
   --secondary-color: #192a56;
+  --bacground-color: #ecf2f5;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --logo-font-family: "Aguafina Script", cursive;
+  --default-font: "League Spartan", sans-serif;
+  --heading-font: "Playfair Display", serif;
 }
 
 body {
-  margin: 100px 0;
+  font-family: var(--default-font);
+  margin: 80px 0 0;
 }
 
 h1,
 h2,
 h3,
 h4 {
+  font-family: var(--heading-font);
+  font-weight: 700;
   color: var(--secondary-color);
   line-height: 1.5;
 }
@@ -35,54 +42,89 @@ h4 {
 
 p {
   font-size: 20px;
-  line-height: 2;
+  line-height: 30px;
 }
 
-.navigation-links {
+footer .social-media-icons a {
+  margin: 10px;
+  font-size: 18px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  transition: all 150ms ease-in-out;
   display: flex;
-  margin: 40px 0 100px 0;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+footer .social-media-icons a:hover {
+  color: var(--bacground-color);
+  background: var(--primary-color);
+}
+
+.hero {
+  background: var(--bacground-color);
+  padding: 80px 20px;
+}
+
+.hero-btns {
+  display: flex;
+  margin: 40px 0;
   justify-content: center;
 }
 
-.navigation-links a {
+.btn-porjects,
+.btn-principal,
+.hero-btns a {
   margin: 20px;
   border-radius: 4px;
-  padding: 20px 15px;
+  padding: 15px 30px;
   text-decoration: none;
   text-transform: capitalize;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
-.contact-link {
+.btn-porjects {
+  margin: 0;
+}
+
+.btn-porjects,
+.btn-contact {
   background: var(--primary-color);
   color: white;
 }
 
-.primary-link:hover,
-.contact-link:hover {
+.btn-porjects:hover,
+.btn-contact:hover {
+  background: var(--primary-color);
   color: white;
 }
 
-.about-link {
+.btn-principal,
+.btn-about {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
-.about-link:hover {
+.btn-principal:hover,
+.btn-about:hover {
   color: var(--primary-color);
 }
 
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
+.project-background {
+  background: var(--bacground-color);
+  padding: 90px 30px;
 }
 
-.projects {
-  margin: 100px 0;
+.project {
+  margin-bottom: 90px;
 }
 
-.about-paragraphs {
-  margin: 30px;
+.project-description {
+  padding: 85px 55px;
 }
 
 .email-link {
@@ -96,15 +138,6 @@ p {
 .email-link:hover {
   text-decoration: underline;
   color: var(--primary-color);
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  color: white;
 }
 
 .project-imgs-home {
@@ -121,26 +154,19 @@ p {
   margin-top: 100px;
 }
 
-.origins-img {
-  margin: 30px;
-  width: 500px;
-}
-
 .about-h3 {
   margin-bottom: 50px;
 }
 
 .experience {
-  text-align: center;
-}
-.about-experience {
-  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
 }
 
-.experience-img {
-  display: block;
-  margin: 0;
-  width: 350px;
+.experience p {
+  line-height: 25px;
+  text-align: center;
 }
 
 .social-media {
@@ -167,6 +193,81 @@ p {
   text-align: center;
 }
 
+.footer-invitation {
+  margin: 10px 100px;
+}
+
+.contact-footer {
+  background: var(--bacground-color);
+  padding: 30px 20px;
+}
+
+.open-source-p {
+  font-size: 15px;
+  text-align: center;
+  margin: 70px 0 20px;
+}
+
+.open-source-link {
+  font-weight: bold;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.open-source-link:hover {
+  color: var(--secondary-color);
+}
+
+.head-logo {
+  font-family: var(--logo-font-family);
+  font-size: 30px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  padding: 20px 0 12px 15px;
+}
+
+.head-logo:hover {
+  color: var(--primary-color);
+}
+
+.nav-link {
+  font-size: 20px !important;
+  color: black;
+}
+
+.active {
+  color: var(--primary-color) !important;
+}
+
+.bg-light {
+  background: white !important;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  background: "rgba(255,255,255,0.5)";
+}
+
+.navbar-nav li a:hover {
+  color: var(--primary-color) !important;
+}
+
+.Esther {
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-size: 21px;
+}
+
+.Esther-img {
+  margin: 30px;
+  width: 500px;
+  border-radius: 25px;
+  box-shadow: var(--box-shadow);
+}
+
 @media (max-width: 580px) {
   h1 {
     font-size: 48px;
@@ -187,7 +288,7 @@ p {
     margin: 40px 0;
   }
 
-  .link-projects {
+  .btn-principal {
     text-align: center;
     display: block;
     margin: 0 40px;
